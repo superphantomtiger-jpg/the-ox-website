@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE OX — No Bear Can Stop The Ox</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDY4MCA2ODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjM0MCIgY3k9IjM0MCIgcj0iMzIwIiBmaWxsPSIjMWExYTFhIi8+CjxjaXJjbGUgY3g9IjM0MCIgY3k9IjM0MCIgcj0iMzIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNkOTdhM2QiIHN0cm9rZS13aWR0aD0iMTAiLz4KCjxwYXRoIGQ9Ik0gMjY1IDI4NSBDIDI1MCAyMTAgMjAwIDEzMCAxMTAgODUgQyA3NSA2OCA1NSA5MiA4MCAxMjAgQyAxNTUgMjAwIDE5NSAyNTAgMjQwIDMwMCBDIDI2MCAzMjAgMjcyIDMxMCAyNjUgMjg1IFoiIGZpbGw9IiM4YjVhMmIiIHN0cm9rZT0iIzRhMmYxMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0gNDE1IDI4NSBDIDQzMCAyMTAgNDgwIDEzMCA1NzAgODUgQyA2MDUgNjggNjI1IDkyIDYwMCAxMjAgQyA1MjUgMjAwIDQ4NSAyNTAgNDQwIDMwMCBDIDQyMCAzMjAgNDA4IDMxMCA0MTUgMjg1IFoiIGZpbGw9IiM4YjVhMmIiIHN0cm9rZT0iIzRhMmYxMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+Cgo8ZWxsaXBzZSBjeD0iMzQwIiBjeT0iMzkwIiByeD0iMTc1IiByeT0iMTYwIiBmaWxsPSIjYzk3OTNmIi8+Cgo8ZWxsaXBzZSBjeD0iMjU1IiBjeT0iMzIwIiByeD0iMzAiIHJ5PSIzOCIgZmlsbD0iIzFhMWExYSIvPgo8ZWxsaXBzZSBjeD0iNDI1IiBjeT0iMzIwIiByeD0iMzAiIHJ5PSIzOCIgZmlsbD0iIzFhMWExYSIvPgo8ZWxsaXBzZSBjeD0iMjU1IiBjeT0iMzEwIiByeD0iMTAiIHJ5PSIxMiIgZmlsbD0iI2YyZThkYyIvPgo8ZWxsaXBzZSBjeD0iNDI1IiBjeT0iMzEwIiByeD0iMTAiIHJ5PSIxMiIgZmlsbD0iI2YyZThkYyIvPgoKPGVsbGlwc2UgY3g9IjM0MCIgY3k9IjQ2MCIgcng9IjExMCIgcnk9IjgwIiBmaWxsPSIjZjJjNDlhIi8+CjxlbGxpcHNlIGN4PSIyOTUiIGN5PSI0ODAiIHJ4PSIxOCIgcnk9IjI0IiBmaWxsPSIjM2EyNDE2Ii8+CjxlbGxpcHNlIGN4PSIzODUiIGN5PSI0ODAiIHJ4PSIxOCIgcnk9IjI0IiBmaWxsPSIjM2EyNDE2Ii8+Cgo8cGF0aCBkPSJNIDI1MCA0MTAgUSAzNDAgNDQwIDQzMCA0MTAiIHN0cm9rZT0iIzdhNGEyNCIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCjxlbGxpcHNlIGN4PSIzNDAiIGN5PSI1MTAiIHJ4PSIxNCIgcnk9IjgiIGZpbGw9IiMzYTI0MTYiLz4KPHBhdGggZD0iTSAzMDAgNTA1IFEgMzQwIDUyNSAzODAgNTA1IiBzdHJva2U9IiMzYTI0MTYiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Ultra&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1C1B18;
+    --mud:#2B2419;
+    --mud-light:#3A311F;
+    --ivory:#EDE6D6;
+    --rust:#B5482D;
+    --rust-bright:#D2582F;
+    --gold:#C9A227;
+    --line:#5A4E3B;
+    --red-line:#8C3A2A;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--charcoal);
+    color:var(--ivory);
+    font-family:'IBM Plex Sans', sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  h1,h2,h3, .stamp{
+    font-family:'Ultra', serif;
+    font-weight:400;
+    letter-spacing:0.02em;
+  }
+
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+
+  a{ color:inherit; }
+
+  .wrap{
+    max-width:1100px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(28,27,24,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+  }
+  .brand{
+    font-family:'Ultra', serif;
+    font-size:20px;
+    color:var(--ivory);
+    letter-spacing:0.05em;
+  }
+  .brand span{ color:var(--rust-bright); }
+  .navlinks{ display:flex; gap:28px; font-size:14px; }
+  .navlinks a{
+    text-decoration:none;
+    color:#C9BFA8;
+    transition:color .2s;
+  }
+  .navlinks a:hover{ color:var(--gold); }
+  .navlinks a:focus-visible, button:focus-visible, .cta:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:3px;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:100px 24px 60px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .eyebrow{
+    font-size:13px;
+    letter-spacing:0.25em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-size:clamp(56px, 11vw, 128px);
+    line-height:0.95;
+    color:var(--ivory);
+    text-shadow: 0 0 40px rgba(181,72,45,0.25);
+    animation: stampIn 0.7s cubic-bezier(.2,.9,.3,1) both;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--rust-bright);
+  }
+  .tagline{
+    font-size:clamp(16px,2.4vw,22px);
+    color:#C9BFA8;
+    margin:22px auto 40px;
+    max-width:560px;
+  }
+  .cta-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .cta{
+    display:inline-block;
+    padding:14px 32px;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:2px;
+    transition:transform .15s ease, box-shadow .15s ease;
+    cursor:pointer;
+    border:none;
+    font-family:'IBM Plex Sans', sans-serif;
+  }
+  .cta:hover{ transform:translateY(-2px); }
+  .cta-primary{
+    background:var(--rust);
+    color:var(--ivory);
+    box-shadow:0 4px 0 #7A2D1A;
+  }
+  .cta-primary:hover{ box-shadow:0 6px 0 #7A2D1A; }
+  .cta-ghost{
+    background:transparent;
+    color:var(--ivory);
+    border:1px solid var(--line);
+  }
+  .cta-ghost:hover{ border-color:var(--gold); color:var(--gold); }
+
+  @keyframes stampIn{
+    0%{ opacity:0; transform:scale(1.15) rotate(-2deg); filter:blur(2px); }
+    60%{ opacity:1; }
+    100%{ opacity:1; transform:scale(1) rotate(0); filter:blur(0); }
+  }
+
+  /* ---------- SIGNATURE CHART ---------- */
+  .chart-wrap{
+    max-width:900px;
+    margin:56px auto 0;
+    position:relative;
+  }
+  .chart-caption{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#8A7F68;
+    margin-top:10px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+  }
+
+  /* ---------- SECTION SHARED ---------- */
+  section{ padding:90px 0; }
+  .section-head{ margin-bottom:48px; }
+  .section-head .eyebrow{ margin-bottom:14px; }
+  .section-head h2{
+    font-size:clamp(30px,4vw,44px);
+    color:var(--ivory);
+  }
+  .divider{
+    border:none; height:1px;
+    background:linear-gradient(to right, transparent, var(--line), transparent);
+  }
+
+  /* ---------- STORY ---------- */
+  .story{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  .story p{ color:#D8CFBB; margin-bottom:18px; font-size:16px; }
+  .story p:last-child{ margin-bottom:0; }
+  .seal{
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+  }
+
+  @media (max-width:820px){
+    .story{ grid-template-columns:1fr; }
+  }
+
+  /* ---------- TRAITS BOARD ---------- */
+  .board{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
+    gap:2px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .tag{
+    background:var(--mud);
+    padding:32px 28px;
+    transition:background .2s;
+  }
+  .tag:hover{ background:var(--mud-light); }
+  .tag .mark{
+    font-family:'Ultra', serif;
+    font-size:13px;
+    color:var(--rust-bright);
+    letter-spacing:0.15em;
+    text-transform:uppercase;
+    display:block;
+    margin-bottom:14px;
+  }
+  .tag h3{
+    font-family:'IBM Plex Sans', sans-serif;
+    font-weight:700;
+    font-size:18px;
+    color:var(--ivory);
+    margin-bottom:10px;
+  }
+  .tag p{ font-size:14px; color:#B9AF98; }
+
+  /* ---------- CONTRACT ---------- */
+  .contract-box{
+    background:var(--mud);
+    border:1px solid var(--line);
+    padding:36px;
+    border-radius:2px;
+  }
+  .contract-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex-wrap:wrap;
+    background:var(--charcoal);
+    border:1px solid var(--line);
+    padding:16px 20px;
+    margin-top:18px;
+  }
+  .contract-row .mono{
+    font-size:14px;
+    color:var(--gold);
+    word-break:break-all;
+    flex:1;
+    min-width:200px;
+  }
+  .copy-btn{
+    background:var(--rust);
+    color:var(--ivory);
+    border:none;
+    padding:9px 16px;
+    font-size:13px;
+    font-weight:600;
+    border-radius:2px;
+    cursor:pointer;
+    font-family:'IBM Plex Sans', sans-serif;
+    white-space:nowrap;
+    transition:background .2s;
+  }
+  .copy-btn:hover{ background:var(--rust-bright); }
+  .verified{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:13px; color:#8FBF7A; margin-top:16px;
+  }
+  .disclaimer{
+    font-size:13px; color:#8A7F68; margin-top:22px; line-height:1.7;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:48px 0 36px;
+    text-align:center;
+  }
+  .foot-links{
+    display:flex; justify-content:center; gap:26px;
+    margin-bottom:22px; flex-wrap:wrap;
+  }
+  .foot-links a{
+    text-decoration:none;
+    font-size:14px;
+    color:#C9BFA8;
+    transition:color .2s;
+  }
+  .foot-links a:hover{ color:var(--gold); }
+  .fine{ font-size:12px; color:#6B6150; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand" style="display:flex; align-items:center; gap:10px;">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjU2IiBoZWlnaHQ9IjI1NiIgdmlld0JveD0iMCAwIDY4MCA2ODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjM0MCIgY3k9IjM0MCIgcj0iMzIwIiBmaWxsPSIjMWExYTFhIi8+CjxjaXJjbGUgY3g9IjM0MCIgY3k9IjM0MCIgcj0iMzIwIiBmaWxsPSJub25lIiBzdHJva2U9IiNkOTdhM2QiIHN0cm9rZS13aWR0aD0iMTAiLz4KCjxwYXRoIGQ9Ik0gMjY1IDI4NSBDIDI1MCAyMTAgMjAwIDEzMCAxMTAgODUgQyA3NSA2OCA1NSA5MiA4MCAxMjAgQyAxNTUgMjAwIDE5NSAyNTAgMjQwIDMwMCBDIDI2MCAzMjAgMjcyIDMxMCAyNjUgMjg1IFoiIGZpbGw9IiM4YjVhMmIiIHN0cm9rZT0iIzRhMmYxMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+CjxwYXRoIGQ9Ik0gNDE1IDI4NSBDIDQzMCAyMTAgNDgwIDEzMCA1NzAgODUgQyA2MDUgNjggNjI1IDkyIDYwMCAxMjAgQyA1MjUgMjAwIDQ4NSAyNTAgNDQwIDMwMCBDIDQyMCAzMjAgNDA4IDMxMCA0MTUgMjg1IFoiIGZpbGw9IiM4YjVhMmIiIHN0cm9rZT0iIzRhMmYxMyIgc3Ryb2tlLXdpZHRoPSI1Ii8+Cgo8ZWxsaXBzZSBjeD0iMzQwIiBjeT0iMzkwIiByeD0iMTc1IiByeT0iMTYwIiBmaWxsPSIjYzk3OTNmIi8+Cgo8ZWxsaXBzZSBjeD0iMjU1IiBjeT0iMzIwIiByeD0iMzAiIHJ5PSIzOCIgZmlsbD0iIzFhMWExYSIvPgo8ZWxsaXBzZSBjeD0iNDI1IiBjeT0iMzIwIiByeD0iMzAiIHJ5PSIzOCIgZmlsbD0iIzFhMWExYSIvPgo8ZWxsaXBzZSBjeD0iMjU1IiBjeT0iMzEwIiByeD0iMTAiIHJ5PSIxMiIgZmlsbD0iI2YyZThkYyIvPgo8ZWxsaXBzZSBjeD0iNDI1IiBjeT0iMzEwIiByeD0iMTAiIHJ5PSIxMiIgZmlsbD0iI2YyZThkYyIvPgoKPGVsbGlwc2UgY3g9IjM0MCIgY3k9IjQ2MCIgcng9IjExMCIgcnk9IjgwIiBmaWxsPSIjZjJjNDlhIi8+CjxlbGxpcHNlIGN4PSIyOTUiIGN5PSI0ODAiIHJ4PSIxOCIgcnk9IjI0IiBmaWxsPSIjM2EyNDE2Ii8+CjxlbGxpcHNlIGN4PSIzODUiIGN5PSI0ODAiIHJ4PSIxOCIgcnk9IjI0IiBmaWxsPSIjM2EyNDE2Ii8+Cgo8cGF0aCBkPSJNIDI1MCA0MTAgUSAzNDAgNDQwIDQzMCA0MTAiIHN0cm9rZT0iIzdhNGEyNCIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCjxlbGxpcHNlIGN4PSIzNDAiIGN5PSI1MTAiIHJ4PSIxNCIgcnk9IjgiIGZpbGw9IiMzYTI0MTYiLz4KPHBhdGggZD0iTSAzMDAgNTA1IFEgMzQwIDUyNSAzODAgNTA1IiBzdHJva2U9IiMzYTI0MTYiIHN0cm9rZS13aWR0aD0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo=" alt="" width="28" height="28" style="border-radius:50%;">
+      THE <span>OX</span>
+    </div>
+    <div class="navlinks">
+      <a href="#story">Lore</a>
+      <a href="#traits">The Herd</a>
+      <a href="#contract">Contract</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Last bull standing</div>
+    <h1>THE <em>OX</em></h1>
+    <p class="tagline">No bear can stop the ox. While the herd panics and runs, one stays — and ploughs.</p>
+    <div class="cta-row">
+      <a href="#contract" class="cta cta-primary">Get $OX</a>
+      <a href="#story" class="cta cta-ghost">Read the lore</a>
+    </div>
+
+    <div class="chart-wrap">
+      <svg viewBox="0 0 900 220" width="100%" role="img" aria-label="Chart showing market volatility while The OX walks a steady line">
+        <!-- faded bear market jagged line -->
+        <polyline points="0,60 60,90 120,70 180,140 240,110 300,170 360,130 420,190 480,150 540,200 600,160 660,205 720,175 780,195 840,180 900,198"
+          fill="none" stroke="#8C3A2A" stroke-width="2" opacity="0.45"/>
+        <!-- steady OX line -->
+        <polyline points="0,150 60,148 120,152 180,146 240,150 300,144 360,148 420,142 480,146 540,140 600,143 660,137 720,140 780,134 840,137 900,130"
+          fill="none" stroke="#C9A227" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- ox marker walking along steady line -->
+        <g transform="translate(870,130)">
+          <circle r="9" fill="#1C1B18" stroke="#C9A227" stroke-width="2"/>
+          <path d="M -5,-2 Q 0,-8 5,-2" stroke="#EDE6D6" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <div class="chart-caption">
+        <span>Bear market noise</span>
+        <span>$OX — steady line</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">The lore</div>
+      <h2>The Last Bull</h2>
+    </div>
+    <div class="story">
+      <div>
+        <p>When the bears flooded into the crypto forest, the whole herd of bulls panicked, dumped, and ran. Only one stayed behind — not because it wasn't afraid, but because it knew: whoever ploughs to the end reaps the last sweet harvest.</p>
+        <p>It doesn't chant "to the moon." It doesn't promise 1000x. The OX just quietly ploughs, day after day, whether the price rises or falls.</p>
+        <p>Those who believe in it call themselves <strong>The Herd</strong> — not because they're many, but because they're steadier than hype.</p>
+      </div>
+      <div class="seal">
+        <svg viewBox="0 0 680 680" role="img" aria-label="Logo The OX">
+          <circle cx="340" cy="340" r="320" fill="#1a1a1a"/>
+          <circle cx="340" cy="340" r="320" fill="none" stroke="#d97a3d" stroke-width="10"/>
+          <path d="M 265 285 C 250 210 200 130 110 85 C 75 68 55 92 80 120 C 155 200 195 250 240 300 C 260 320 272 310 265 285 Z" fill="#8b5a2b" stroke="#4a2f13" stroke-width="5"/>
+          <path d="M 415 285 C 430 210 480 130 570 85 C 605 68 625 92 600 120 C 525 200 485 250 440 300 C 420 320 408 310 415 285 Z" fill="#8b5a2b" stroke="#4a2f13" stroke-width="5"/>
+          <ellipse cx="340" cy="390" rx="175" ry="160" fill="#c9793f"/>
+          <ellipse cx="255" cy="320" rx="30" ry="38" fill="#1a1a1a"/>
+          <ellipse cx="425" cy="320" rx="30" ry="38" fill="#1a1a1a"/>
+          <ellipse cx="255" cy="310" rx="10" ry="12" fill="#f2e8dc"/>
+          <ellipse cx="425" cy="310" rx="10" ry="12" fill="#f2e8dc"/>
+          <ellipse cx="340" cy="460" rx="110" ry="80" fill="#f2c49a"/>
+          <ellipse cx="295" cy="480" rx="18" ry="24" fill="#3a2416"/>
+          <ellipse cx="385" cy="480" rx="18" ry="24" fill="#3a2416"/>
+          <path d="M 250 410 Q 340 440 430 410" stroke="#7a4a24" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <ellipse cx="340" cy="510" rx="14" ry="8" fill="#3a2416"/>
+          <path d="M 300 505 Q 340 525 380 505" stroke="#3a2416" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="traits">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we stand for</div>
+      <h2>The Herd's Code</h2>
+    </div>
+    <div class="board">
+      <div class="tag">
+        <span class="mark">Trait</span>
+        <h3>No panic selling</h3>
+        <p>The herd holds steady through every dip — discipline over emotion.</p>
+      </div>
+      <div class="tag">
+        <span class="mark">Trait</span>
+        <h3>No empty hype</h3>
+        <p>No 1000x promises, no hollow "to the moon." Just steady progress, one step at a time.</p>
+      </div>
+      <div class="tag">
+        <span class="mark">Trait</span>
+        <h3>Built to last</h3>
+        <p>Transparent, verified contract, out in the open — nothing to hide.</p>
+      </div>
+      <div class="tag">
+        <span class="mark">Trait</span>
+        <h3>Community-plowed</h3>
+        <p>The Herd runs its own channels, never dependent on a single person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="contract">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Get in</div>
+      <h2>Contract</h2>
+    </div>
+    <div class="contract-box">
+      <p style="color:#D8CFBB; font-size:15px;">Always double-check the contract address before trading. This is the official $OX address:</p>
+      <div class="contract-row">
+        <span class="mono" id="contractAddr">0xd5620f9630c6f12ae45f2f7768bf8bdfbcb59039</span>
+        <button class="copy-btn" onclick="copyAddr()">Copy</button>
+      </div>
+      <div class="verified">✓ Verified source code on Etherscan</div>
+      <p class="disclaimer">$OX is a community and entertainment memecoin. Nothing here is investment or financial advice — always do your own research (DYOR) and only risk what you can afford to lose completely.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="#">Telegram</a>
+      <a href="#">X / Twitter</a>
+      <a href="#">Etherscan</a>
+      <a href="#">Whitepaper</a>
+    </div>
+    <div class="fine">THE OX — No Bear Can Stop The Ox. The Herd doesn't panic.</div>
+  </div>
+</footer>
+
+<script>
+  function copyAddr(){
+    const text = document.getElementById('contractAddr').textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      const original = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = original, 1500);
+    });
+  }
+</script>
+
+</body>
+</html>
